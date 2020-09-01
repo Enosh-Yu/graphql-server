@@ -3,9 +3,21 @@ const Person = {
     age: 40
 }
 
+const People = [
+    {
+        name: "enosh",
+        age: 40
+    },
+    {
+        name: "John",
+        age: 39
+    }
+]
+
 const resolvers = {
     Query: {
-        person: () => Person
+        person: () => Person,
+        people: ()=> People
     }
 };
 
